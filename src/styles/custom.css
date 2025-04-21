@@ -1,0 +1,7 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card-img-top{
+    object-fit:cover;/*hace que la imagen ocupe toda la pantalla y no se deforme
+};
