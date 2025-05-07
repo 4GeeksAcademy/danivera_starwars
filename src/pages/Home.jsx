@@ -6,6 +6,7 @@ import CardPlanet from "../components/CardPlanet";
 const Home = () => {
   const { data: planets, loading: loadingPlanets } = useFetch(getPlanets, null);
 
+  
   return (
     <>
       <h1>Star Wars Explorer</h1>

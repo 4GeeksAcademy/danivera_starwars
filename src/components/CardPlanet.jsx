@@ -16,15 +16,23 @@ const CardPlanet = ({ planet, uid }) => {
     }
   };
 
+  const getPlanetImagenUrl=(uid)=>{
+    return `https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/planets/${uid}.jpg`
+    
+
+  }
+
   return (
     <div className="card">
       <img
-        src="https://placehold.co/400x200"
+        src={getPlanetImagenUrl(planet.uid)}
         className="card-img-top"
         alt={planet.name}
       />
       <div className="card-body">
         <h5 className="card-text">{planet.name}</h5>
+        <h5>{planet.uid}</h5>
+        <p>{planet.url}</p>
       </div>
       <div className="d-flex justify-content-between">
         <Link to={`/planet/${uid}`} className="btn btn-primary">

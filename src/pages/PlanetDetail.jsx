@@ -13,6 +13,11 @@ const PlanetDetail = () => {
   return (
     <div>
       <h1>{planet.properties.name}</h1>
+      <h3>{planet.properties.climate}</h3>
+      <h3>{planet.properties.terrain}</h3>
+      <h3>{planet.properties.gravity}</h3>
+      <h3>{planet.properties.orbital_period}</h3>
+
     </div>
   );
 };
